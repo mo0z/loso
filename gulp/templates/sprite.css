@@ -1,0 +1,43 @@
+/* 
+ * Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+ * Instead edit gulp/templates/sprite 
+ * */
+
+{{ #shapes }}
+  {{ #first }}
+    .icon {
+      background-image: url('../../assets/images/sprites/{{{ sprite }}}');
+    }
+
+    .no-svg .icon {
+      background-image: url('../../assets/images/sprites/{{ #replaceSvgWithPng }}{{{ sprite }}}{{ /replaceSvgWithPng }}');
+    }
+  {{ /first }}
+
+.icon--{{ base }} {
+  width: {{ width.outer }}px;
+  height: {{ width.outer }}px;
+  background-position: {{ position.relative.xy }};
+}
+{{ /shapes }}
+
+.icon--clear-view-escapes {
+height: 60px;
+}
+
+.icon--wifi,
+.icon--fire {
+height: 64px;
+}
+
+.icon--mail {
+  height: 50px;
+}
+
+.icon--facebook {
+height: 44.23px;
+}
+
+.icon-youtube {
+  height: 41.75px;
+}

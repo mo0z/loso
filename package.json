@@ -1,0 +1,19 @@
+{
+  "name": "loso_perso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo0z/loso.git"
+  },
+  "author": "mo0z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mo0z/loso/issues"
+  },
+  "homepage": "https://github.com/mo0z/loso#readme"
+}
